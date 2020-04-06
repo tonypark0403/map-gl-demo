@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactMapGL from 'react-map-gl';
+import * as parkData from './data/skateboard-parks.json';
 import config from './config';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken={config.mapboxToken}
-        mapStyle='mapbox://styles/c3dream/ck8ngj2b20td01iqvk8v88m63'
+        mapStyle="mapbox://styles/c3dream/ck8ngj2b20td01iqvk8v88m63"
         onViewportChange={(viewport) => {
           setViewport(viewport);
         }}
