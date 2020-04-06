@@ -15,8 +15,9 @@ function App() {
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken={config.mapboxToken}
-        onViewportChange={( viewport ) => {
-          setViewport( viewport );
+        mapStyle='mapbox://styles/c3dream/ck8ngj2b20td01iqvk8v88m63'
+        onViewportChange={(viewport) => {
+          setViewport(viewport);
         }}
       >
         markers here
